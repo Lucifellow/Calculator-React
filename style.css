@@ -1,0 +1,100 @@
+.norm-btn {
+  border: 2px solid black;
+  padding: 2vw;
+}
+
+.red-btn {
+  border: 2px solid red;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+#display-container {
+  background-color: rgba(254, 254, 255, 0.3);
+}
+
+#display {
+  padding-top: 2vw;
+  padding-left: 1vw;
+  font-family: "Share Tech Mono", monospace;
+  font-size: xx-large;
+}
+
+#main {
+  background-color: rgba(182, 181, 181, 0.3);
+  border: 2px solid black;
+}
+
+#clear {
+  padding-left: 6.2vw;
+  padding-right: 6.4vw;
+}
+
+#zero {
+  padding-left: 4.4vw;
+  padding-right: 4.45vw;
+}
+
+@media (min-width: 2000px) {
+  .norm-btn {
+    padding: 3vw;
+  }
+
+  #clear {
+    padding-left: 9.4vw;
+    padding-right: 9vw;
+  }
+
+  #zero {
+    padding-left: 6vw;
+    padding-right: 6.5vw;
+  }
+}
+@media (min-width: 851px) and (max-width: 1291px) {
+  #clear {
+    padding-left: 6.5vw;
+    padding-right: 6.2vw;
+  }
+
+  #zero {
+    padding-left: 4vw;
+    padding-right: 5vw;
+  }
+}
+@media (min-width: 598px) and (max-width: 851px) {
+  .norm-btn {
+    padding: 4vw;
+  }
+
+  #clear {
+    padding-left: 12.7vw;
+    padding-right: 12.4vw;
+  }
+
+  #zero {
+    padding-left: 9vw;
+    padding-right: 8.6vw;
+  }
+}
+@media (max-width: 597px) {
+  .norm-btn {
+    padding: 5vw;
+  }
+
+  #clear {
+    padding-left: 15.9vw;
+    padding-right: 16vw;
+  }
+
+  #zero {
+    padding-left: 11.3vw;
+    padding-right: 11.3vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,86 @@
+$display-font:'Share Tech Mono', monospace;
+
+@mixin setPaddingWidth($left, $right){
+    padding-left:$left;
+    padding-right:$right;
+}
+
+.norm-btn{
+    border: 2px solid black;
+    padding:2vw;
+}
+.red-btn{
+    border: 2px solid red;
+}
+#container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    
+}
+#display-container{
+    background-color:rgba(254, 254, 255,0.3)
+}
+#display{
+    padding-top:2vw;
+    padding-left:1vw;
+    font-family: $display-font;
+    font-size: xx-large;
+}
+
+#main{
+    background-color: rgba($color: rgba(182, 181, 181, 0.992), $alpha: 0.3);
+    border:2px solid black;
+}
+#clear{
+    @include setPaddingWidth(6.2vw,6.4vw);
+}
+#zero{
+    @include setPaddingWidth(4.4vw,4.45vw);
+}
+
+@media (min-width:2000px){
+    .norm-btn{
+        padding:3vw;
+    }
+    #clear{
+        @include setPaddingWidth(9.4vw,9vw);
+    }
+    #zero{
+        @include setPaddingWidth(6vw,6.5vw);
+    }
+}
+
+@media (min-width:851px)and (max-width:1291px){
+    #clear{
+        @include setPaddingWidth(6.5vw,6.2vw);
+    }
+    #zero{
+        @include setPaddingWidth(4vw,5vw);
+    }
+}
+
+@media (min-width:598px)and(max-width:851px){
+    .norm-btn{
+        padding:4vw;
+    }
+    #clear{
+        @include setPaddingWidth(12.7vw,12.4vw);
+    }
+    #zero{
+        @include setPaddingWidth(9vw,8.6vw);
+    }
+}
+
+@media (max-width:597px){
+    .norm-btn{
+        padding:5vw;
+    }
+    #clear{
+        @include setPaddingWidth(15.9vw,16vw);
+    }
+    #zero{
+        @include setPaddingWidth(11.3vw,11.3vw);
+    }
+}
